@@ -4,126 +4,162 @@
     <title>my wishlist</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <link href="/style.css" rel="stylesheet" integrity="sha384-q97x7Ja2IkWGDeIXp9xkXfjPcXbSCsiT7fhS0fXxbPOJAI1W5gnO8ksUNF9GuKRn" crossorigin="anonymous">
+    <link href="/style.css" rel="stylesheet" type="text/css" integrity="sha384-q97x7Ja2IkWGDeIXp9xkXfjPcXbSCsiT7fhS0fXxbPOJAI1W5gnO8ksUNF9GuKRn" crossorigin="anonymous">
   </head>
   <body>
     <h1><u><i>my wishlist</i></u></h1>
     <p><b>note: this is public-facing; anyone can see it.</b> and obviously, this is not just for [insert next holiday here], and i do not expect anyone to actually buy something from this list - regardless of whether you're a friend or you're family! no one is obligated, period</p>
-    <p style="color:red;">this webpage may be broken! if something's not right, please let me know!</p>
+    <p><span style="color:red;">this webpage may be broken at any time! if something's not right, please let me know!</span> click on the name of an item to visit a link to it (if one exists)! <span style="color:green;">last updated: December 13th, 2023</span></p>
     <p>with that said - here's everything, in alphabetical order:</p>
+    <div id="filter" style="display:none;">
+      <p>
+        <i>use these checkboxes to filter out what you don't want to see!</i><br>
+        <input type="checkbox" id="musicFilter" name="music">
+        <label for="music"> MUSIC</label><br>
+        <input type="checkbox" id="clothesFilter" name="clothes">
+        <label for="clothes"> CLOTHES</label><br>
+        <input type="checkbox" id="gamesFilter" name="games">
+        <label for="games"> GAMES</label><br>
+        <input type="checkbox" id="techFilter" name="tech">
+        <label for="tech"> TECH</label><br>
+        <input type="checkbox" id="miscFilter" name="misc">
+        <label for="misc"> MISC</label><br>
+      </p>
+      <script>
+        // @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt PublicDomain
+        Array.from(document.getElementsByTagName('input')).forEach((checkbox) => checkbox.checked = true);
+        document.getElementById('filter').style = '';
+        // @license-end
+      </script>
+    </div>
     <ul>
-        <li><b>MUSIC</b> | <a href="https://store.100gecs.com/products/100-gecs-10-000-gecs-vinyl-black">100 gecs 10,000 gecs vinyl (black)</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/235800">Audiosurf 2</a></li>
-        <li><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/air2earth-long-sleeve">air2earth black long sleeve</a></li>
-        <li><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/air2earth-gradient-long-sleeve">air2earth gradient long sleeve</a></li>
-        <li><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/air2earth-surf-cap-slate">air2earth logo clap (slate blue)</a></li>
-        <li><b>MUSIC</b> | <a href="https://angeljelly.bandcamp.com/track/sub-ft-saoirse-dream">angel jelly - sub (ft. saoirse dream)</a></li>
-        <li><b>MUSIC</b> | <a href="https://bhproducer.bandcamp.com/track/red-blue-and-green-lights-w-saoirse-dream">bh - red blue and green lights (w/ saoirse dream)</a></li>
-        <li><b>MUSIC</b> | <a href="https://bhproducer.bandcamp.com/track/red-blue-and-green-lights-w-saoirse-dream-bh-bike-ride-edit">bh - red blue and green lights (w/ saoirse dream) [bh "bike ride" edit]</a></li>
-        <li><b>MUSIC</b> | <a href="https://payhip.com/b/zkpdC">bh starter pack vol. 1</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/1152340">Book of Travels</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/620980">Beat Saber</a></li>
-        <li><b>MUSIC</b> | <a href="https://c418.bandcamp.com/album/cookie-clicker">C418 - Cookie Clicker</a></li>
-        <li><b>MUSIC</b> | <a href="https://c418.bandcamp.com/album/minecraft-volume-alpha">C418 - Minecraft - Volume Alpha</a></li>
-        <li><b>MUSIC</b> | <a href="https://c418.bandcamp.com/album/minecraft-volume-beta">C418 - Minecraft - Volume Beta</a></li>
-        <li><b>GAMES</b> | <a href="https://mattmakesgames.itch.io/celeste">Celeste</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/774801">Crab Champions</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/247080">Crypt of the NecroDancer</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/1976950">Desktop Dungeons: Rewind</a></li>
-        <li><b>CLOTHES</b> | <a href="https://underscores.plus/everybody">'Everybody' hoodie</a></li>
-        <li><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-1">FORM - All Nighter Vol. 1</a></li>
-        <li><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-2">FORM - All Nighter Vol. 2</a></li>
-        <li><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-2-remixes">FORM - All Nighter Vol. 2 - Remixes</a></li>
-        <li><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-3">FORM - All Nighter Vol. 3</a></li>
-        <li><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-4">FORM - All Nighter Vol. 4</a></li>
-        <li><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-5">FORM - All Nighter Vol. 5</a></li>
-        <li><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-6-2">FORM - All Nighter Vol. 6</a></li>
-        <li><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-7">FORM - All Nighter Vol. 7</a></li>
-        <li><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-8-2">FORM - All Nighter Vol. 8</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/383870">Firewatch</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/240720">Getting Over It with Bennett Foddy</a></li>
-        <li><b>MUSIC</b> | <a href="https://grimvvice.bandcamp.com/track/they-shoot-horses-dont-they-keep-dancing-w-saoirse-dream">GRIMVVICE - They shoot horses, don't they? (Keep dancing) w/ saoirse dream</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/562860">Ion Fury</a></li>
-        <li><b>MUSIC</b> | <a href="https://akuparagames.bandcamp.com/album/rain-world-downpour-original-soundtrack">James Primate, Lydia Esrig, Intikus, Ongomato, Connor "12LBS" Skidmore, Bwarch, Progfox - Rain World: Downpour (Original Soundtrack)</a></li>
-        <li><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/kaomoji-hoodie">kaomoji hoodie</a></li>
-        <li><b>MUSIC</b> | <a href="https://mntlalxaline.bandcamp.com/track/mystic-doitrightback-remix">Krazz - mystic x saoirse dream - doitrightback (ALXALINE Mashup/Remix)</a></li>
-        <li><b>MUSIC</b> | <a href="https://lfav.bandcamp.com/album/isomorph">leastfavorite! - isomorph.</a></li>
-        <li><b>MUSIC</b> | <a href="https://radicaldreamland.bandcamp.com/album/celeste-b-sides">Lena Raine - Celeste B-Sides</a></li>
-        <li><b>MUSIC</b> | <a href="https://radicaldreamland.bandcamp.com/album/celeste-classic-2-lanis-trek-original-sound-version">Lena Raine - Celeste Classic 2: Lani's Trek (Original Sound Version)</a></li>
-        <li><b>MUSIC</b> | <a href="https://radicaldreamland.bandcamp.com/album/celeste-classic-2-lanis-trek-original-sound-version">Lena Raine - Celeste Classic 2: Lani's Trek 7" Purple Vinyl</a></li>
-        <li><b>MUSIC</b> | <a href="https://radicaldreamland.bandcamp.com/album/celeste-original-soundtrack">Lena Raine - Celeste Complete Sound Collection 6XLP Box Set</a></li>
-        <li><b>MUSIC</b> | <a href="https://radicaldreamland.bandcamp.com/album/celeste-original-soundtrack">Lena Raine - Celeste Original Soundtrack</a></li>
-        <li><b>MUSIC</b> | <a href="https://radicaldreamland.bandcamp.com/album/celeste-farewell-original-soundtrack">Lena Raine - Celeste: Farewell (Original Soundtrack)</a></li>
-        <li><b>MUSIC</b> | <a href="https://radicaldreamland.bandcamp.com/album/celeste-madelines-grab-bag">Lena Raine - Celeste - Madeline's Grab Bag</a></li>
-        <li><b>CLOTHES</b> | <a href="https://store.100gecs.com/products/logo-for-10-000-gecs-tee">logo for 10,000 gecs tee</a></li>
-        <li><b>CLOTHES</b> | <a href="https://underscores.plus/mcfarmhouse">'McFarmhouse' tee</a></li>
-        <li><b>MISC</b> | money ^_^ <a href="https://jbmagination.bandcamp.com">buy my music</a> or give me gift cards :3</li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/606150">Moonlighter</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/1330760">Mind Mirror</a></li>
-        <li><b>TECH</b> | <a href="https://www.nintendo.com/us/switch/oled-model">Nintendo Switch - OLED Model</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/17410">Mirror's Edge™</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/1233570">Mirror's Edge™ Catalyst</a></li>
-        <li><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/pigment-smoke-bird-hoodie">nurture dove hoodie</a></li>
-        <li><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/cement-tree-tee">nurture landscape tee</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/969760">Omno</a></li>
-        <li><b>TECH</b> | <a href="https://uturnaudio.com/products/orbit-special-turntable">Orbit Special Turntable</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/bundle/1788">Overcooked: Gourmet Edition</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/bundle/13608">Overcooked! 2 - Gourmet Edition</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/739630">Phasmophobia</a></li>
-        <li><b>TECH</b> | <a href="https://play.date">Playdate</a></li>
-        <li><b>TECH</b> | <a href="https://play.date/cover">Playdate Cover</a></li>
-        <li><b>TECH</b> | <a href="https://play.date/stereo-dock">Playdate Stereo Dock</a></li>
-        <li><b>TECH</b> | <a href="https://uturnaudio.com/products/pluto-2-phono-preamp">Pluto 2 Phono Preamp</a></li>
-        <li><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/black-tree-logo-tee">porter robinson logo tee</a></li>
-        <li><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/cat-beanie">porter robinson cat ear beanie</a></li>
-        <li><b>MUSIC</b> | <a href="https://store.porterrobinson.com/products/gyw-vinyl">Porter Robinson - get your wish 7" vinyl</a></li>
-        <li><b>MUSIC</b> | <a href="https://store.porterrobinson.com/products/look-at-the-sky-vinyl">Porter Robinson - look at the sky 7" vinyl</a></li>
-        <li><b>MUSIC</b> | <a href="https://store.porterrobinson.com/products/look-at-the-sky-7-vinyl-different-cover">Porter Robinson - look at the sky 7" vinyl - different cover</a></li>
-        <li><b>MUSIC</b> | <a href="https://store.porterrobinson.com/products/mirror-vinyl">Porter Robinson - mirror 7" vinyl</a></li>
-        <li><b>MUSIC</b> | <a href="https://store.porterrobinson.com/products/musician-7-vinyl">Porter Robinson - musician 7" vinyl</a></li>
-        <li><b>MUSIC</b> | <a href="https://store.porterrobinson.com/products/sc-vinyl">Porter Robinson - something comforting 7" vinyl</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/bundle/29285">Rain World - Deluxe Edition</a></li>
-        <li><b>MUSIC</b> | <a href="https://saoirsedream.bandcamp.com/track/down-in-flames">saoirse dream - down in flames</a></li>
-        <li><b>MUSIC</b> | <a href="https://cuubed.bandcamp.com/track/focus-cuubed-remix">saoirse dream - Focus (Cuubed Remix)</a></li>
-        <li><b>MUSIC</b> | <a href="https://mntlalxaline.band camp.com/track/saoirse-dream-just-like-you-remix">saoirse dream - just like you (ALXALINE Remix)</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/301970">Screencheat</a></li>
-        <li><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/scribble-dad-hat">scribble hat</a></li>
-        <li><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/scribble-tee">scribble tee</a></li>
-        <li><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/second-sky-festival%E2%84%A2-official-potaro-jersey">second sky festival™ official potaro jersey</a></li>
-        <li><b>CLOTHES</b> | <a href="https://market.underscores.plus/products/secretariat-tee">Secretariat Tee</a></li>
-        <li><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/black-sky-ghost-moon-long-sleeve">sky / moon / ghost long sleeve (black)</a></li>
-        <li><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/white-sky-long-sleeve">sky / moon / ghost long sleeve (white)</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/637100">Sonic Forces</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/1237320">Sonic Frontiers</a></li>
-        <li><b>TECH</b> | <a href="https://www.steamdeck.com/dock">Steam Deck Dock</a></li>
-        <li><b>TECH</b> | <a href="https://www.steamdeck.com/oled">Steam Deck OLED</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/40800">Super Meat Boy</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/1089980">The Henry Stickmin Collection</a></li>
-        <li><b>MUSIC</b> | <a href="https://tobyfox.bandcamp.com/album/deltarune-chapter-1-ost">Toby Fox - DELTARUNE Chapter 1 OST</a></li>
-        <li><b>MUSIC</b> | <a href="https://tobyfox.bandcamp.com/album/deltarune-chapter-2-ost">Toby Fox - DELTARUNE Chapter 2 OST</a></li>
-        <li><b>MUSIC</b> | <a href="https://tobyfox.bandcamp.com/album/undertale-demo-ost">Toby Fox - UNDERTALE Demo OST</a></li>
-        <li><b>MUSIC</b> | <a href="https://tobyfox.bandcamp.com/album/undertale-soundtrack">Toby Fox - UNDERTALE Soundtrack</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/508440">Totally Accurate Battle Simulator</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/1011670">Totally Reliable Delivery Service</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/bundle/11396">Towerfall Collection</a></li>
-        <li><b>GAMES</b> | <a href="https://mattmakesgames.itch.io/towerfall-8-player">Towerfall 8-Player</a></li>
-        <li><b>MUSIC</b> | <a href="https://underscores.bandcamp.com/track/about-the-kid-that-never-left-the-house">underscores - about the kid that never left the house</a></li>
-        <li><b>MUSIC</b> | <a href="https://underscores.plus/fear-LP">underscores 'fearmonger' vinyl</a></li>
-        <li><b>MUSIC</b> | <a href="https://underscores.plus/fsh-LP">underscores 'fishmonger' vinyl</a></li>
-        <li><b>MUSIC</b> | <a href="https://underscores.bandcamp.com/album/character-development">underscores - character development!</a></li>
-        <li><b>MUSIC</b> | <a href="https://underscores.bandcamp.com/album/skin-purifying-treatment">underscores - skin purifying treatment</a></li>
-        <li><b>MUSIC</b> | <a href="https://underscores.plus/Wsk-LP">underscores 'Wallsocket' vinyl</a> <a href="https://www.urbanoutfitters.com/shop/underscores-wallsocket-limited-2xlp">(also on Urban Outfitters)</a></li>
-        <li><b>MUSIC</b> | <a href="https://underscores.bandcamp.com/album/we-never-got-strawberry-cake">underscores - we never got strawberry cake</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/837470">Untitled Goose Game</a></li>
-        <li><b>GAMES</b> | <a href="https://store.steampowered.com/app/306460">Unturned - Permanent Gold Upgrade</a></li>
-        <li><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/arcane-tee">virtual self arcane circle tee</a></li>
-        <li><b>CLOTHES</b> | <a href="https://market.underscores.plus/products/wallsocket-tower-hoodie">Wallsocket Horseshoe Hoodie</a></li>
-        <li><b>CLOTHES</b> | <a href="https://market.underscores.plus/products/wallsocket-tower-shorts">Wallsocket Horseshoe Shorts</a></li>
-        <li><b>MUSIC</b> | <a href="https://webcage.bandcamp.com/track/mystery-song">webcage - mystery song</a></li>
-        <li><b>MUSIC</b> | <a href="https://webcage.bandcamp.com/track/0m61ly5m-w-saoirse-dream-dossyx-nebita-can-of-bliss">webcage - OM61LY5M</a></li>
-        <li><b>MUSIC</b> | <a href="https://webcage.bandcamp.com/track/onions-w-rift-dossyx-scooter-boi-to-oscar-can-of-bliss-saoirse-dream-franco">webcage - onions</a></li>
-        <li><b>MUSIC</b> | <a href="https://webcage.bandcamp.com/album/peer2peer">webcage - peer2peer</a></li>
-        <li><b>CLOTHES</b> | <a href="https://underscores.plus/welcome-to-mi">'Welcome to MI' tee</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://store.100gecs.com/products/100-gecs-10-000-gecs-vinyl-black">100 gecs 10,000 gecs vinyl (black)</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/235800">Audiosurf 2</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/air2earth-long-sleeve">air2earth black long sleeve</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/air2earth-gradient-long-sleeve">air2earth gradient long sleeve</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/air2earth-surf-cap-slate">air2earth logo clap (slate blue)</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://angeljelly.bandcamp.com/track/sub-ft-saoirse-dream">angel jelly - sub (ft. saoirse dream)</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://www.fangamer.com/collections/exok/products/celeste-farewell-shirt">Beyond the Mountain</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://bhproducer.bandcamp.com/track/red-blue-and-green-lights-w-saoirse-dream">bh - red blue and green lights (w/ saoirse dream)</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://bhproducer.bandcamp.com/track/red-blue-and-green-lights-w-saoirse-dream-bh-bike-ride-edit">bh - red blue and green lights (w/ saoirse dream) [bh "bike ride" edit]</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://payhip.com/b/zkpdC">bh starter pack vol. 1</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/1152340">Book of Travels</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/620980">Beat Saber</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://c418.bandcamp.com/album/cookie-clicker">C418 - Cookie Clicker</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://c418.bandcamp.com/album/minecraft-volume-alpha">C418 - Minecraft - Volume Alpha</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://c418.bandcamp.com/album/minecraft-volume-beta">C418 - Minecraft - Volume Beta</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://mattmakesgames.itch.io/celeste">Celeste</a> <i>(also on <a href="https://www.xbox.com/games/store/celeste/bwmql2rpwbhb">Microsoft Store</a>, <a href="https://www.fangamer.com/collections/celeste/products/celeste-deluxe-edition-game">Fangamer</a>)</i></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://www.fangamer.com/collections/exok/products/celeste-mountain-shirt">Climb</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/774801">Crab Champions</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/247080">Crypt of the NecroDancer</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/1976950">Desktop Dungeons: Rewind</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://underscores.plus/everybody">'Everybody' hoodie</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://www.fangamer.com/collections/exok/products/celeste-hoodie-sweatshirt">Explore Celeste Hoodie</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://theyetee.com/collections/celeste/products/fall-1">Fall</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-1">FORM - All Nighter Vol. 1</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-2">FORM - All Nighter Vol. 2</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-2-remixes">FORM - All Nighter Vol. 2 - Remixes</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-3">FORM - All Nighter Vol. 3</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-4">FORM - All Nighter Vol. 4</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-5">FORM - All Nighter Vol. 5</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-6-2">FORM - All Nighter Vol. 6</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-7">FORM - All Nighter Vol. 7</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://artbyform.bandcamp.com/album/all-nighter-vol-8-2">FORM - All Nighter Vol. 8</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/383870">Firewatch</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/240720">Getting Over It with Bennett Foddy</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://grimvvice.bandcamp.com/track/they-shoot-horses-dont-they-keep-dancing-w-saoirse-dream">GRIMVVICE - They shoot horses, don't they? (Keep dancing) w/ saoirse dream</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/562860">Ion Fury</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://akuparagames.bandcamp.com/album/rain-world-downpour-original-soundtrack">James Primate, Lydia Esrig, Intikus, Ongomato, Connor "12LBS" Skidmore, Bwarch, Progfox - Rain World: Downpour (Original Soundtrack)</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/kaomoji-hoodie">kaomoji hoodie</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://mntlalxaline.bandcamp.com/track/mystic-doitrightback-remix">Krazz - mystic x saoirse dream - doitrightback (ALXALINE Mashup/Remix)</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://lfav.bandcamp.com/album/isomorph">leastfavorite! - isomorph.</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://radicaldreamland.bandcamp.com/album/celeste-b-sides">Lena Raine - Celeste B-Sides</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://www.fangamer.com/collections/exok/products/celeste-cassette-soundtrack">Lena Raine - Celeste Cassette Soundtrack</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://www.fangamer.com/collections/exok/products/celeste-b-sides-cassette">Lena Raine - Celeste B-Sides Cassette</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://radicaldreamland.bandcamp.com/album/celeste-classic-2-lanis-trek-original-sound-version">Lena Raine - Celeste Classic 2: Lani's Trek (Original Sound Version)</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://radicaldreamland.bandcamp.com/album/celeste-classic-2-lanis-trek-original-sound-version">Lena Raine - Celeste Classic 2: Lani's Trek 7" Purple Vinyl</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://radicaldreamland.bandcamp.com/album/celeste-original-soundtrack">Lena Raine - Celeste Complete Sound Collection 6XLP Box Set</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://radicaldreamland.bandcamp.com/album/celeste-original-soundtrack">Lena Raine - Celeste Original Soundtrack</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://radicaldreamland.bandcamp.com/album/celeste-farewell-original-soundtrack">Lena Raine - Celeste: Farewell (Original Soundtrack)</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://radicaldreamland.bandcamp.com/album/celeste-madelines-grab-bag">Lena Raine - Celeste - Madeline's Grab Bag</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://store.100gecs.com/products/logo-for-10-000-gecs-tee">logo for 10,000 gecs tee</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://theyetee.com/collections/celeste/products/long-climb-ahead">Long Climb Ahead</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://underscores.plus/mcfarmhouse">'McFarmhouse' tee</a></li>
+        <li class="misc"><b>MISC</b> | money ^_^ <a href="https://jbmagination.bandcamp.com">buy my music</a> or give me gift cards :3</li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/606150">Moonlighter</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/1330760">Mind Mirror</a></li>
+        <li class="tech"><b>TECH</b> | <a href="https://www.nintendo.com/us/switch/oled-model">Nintendo Switch - OLED Model</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/17410">Mirror's Edge™</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/1233570">Mirror's Edge™ Catalyst</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://www.fangamer.com/collections/exok/products/celeste-badeline-shirt">Not Above Me</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/pigment-smoke-bird-hoodie">nurture dove hoodie</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/cement-tree-tee">nurture landscape tee</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/969760">Omno</a></li>
+        <li class="tech"><b>TECH</b> | <a href="https://uturnaudio.com/products/orbit-special-turntable">Orbit Special Turntable</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/bundle/1788">Overcooked: Gourmet Edition</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/bundle/13608">Overcooked! 2 - Gourmet Edition</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/739630">Phasmophobia</a></li>
+        <li class="tech"><b>TECH</b> | <a href="https://play.date">Playdate</a></li>
+        <li class="tech"><b>TECH</b> | <a href="https://play.date/cover">Playdate Cover</a></li>
+        <li class="tech"><b>TECH</b> | <a href="https://play.date/stereo-dock">Playdate Stereo Dock</a></li>
+        <li class="tech"><b>TECH</b> | <a href="https://playstation.com/ps5">PlayStation®5</a></li>
+        <li class="tech"><b>TECH</b> | <a href="https://uturnaudio.com/products/pluto-2-phono-preamp">Pluto 2 Phono Preamp</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/black-tree-logo-tee">porter robinson logo tee</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/cat-beanie">porter robinson cat ear beanie</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://store.porterrobinson.com/products/gyw-vinyl">Porter Robinson - get your wish 7" vinyl</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://store.porterrobinson.com/products/look-at-the-sky-vinyl">Porter Robinson - look at the sky 7" vinyl</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://store.porterrobinson.com/products/look-at-the-sky-7-vinyl-different-cover">Porter Robinson - look at the sky 7" vinyl - different cover</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://store.porterrobinson.com/products/mirror-vinyl">Porter Robinson - mirror 7" vinyl</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://store.porterrobinson.com/products/musician-7-vinyl">Porter Robinson - musician 7" vinyl</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://store.porterrobinson.com/products/sc-vinyl">Porter Robinson - something comforting 7" vinyl</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/bundle/29285">Rain World - Deluxe Edition</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://theyetee.com/collections/celeste/products/reflection">Reflection Zip-up</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://saoirsedream.bandcamp.com/track/down-in-flames">saoirse dream - down in flames</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://cuubed.bandcamp.com/track/focus-cuubed-remix">saoirse dream - Focus (Cuubed Remix)</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://mntlalxaline.band camp.com/track/saoirse-dream-just-like-you-remix">saoirse dream - just like you (ALXALINE Remix)</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/301970">Screencheat</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/scribble-dad-hat">scribble hat</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/scribble-tee">scribble tee</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/second-sky-festival%E2%84%A2-official-potaro-jersey">second sky festival™ official potaro jersey</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://market.underscores.plus/products/secretariat-tee">Secretariat Tee</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://www.fangamer.com/collections/exok/products/celeste-cassette-shirt">SIDES</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/black-sky-ghost-moon-long-sleeve">sky / moon / ghost long sleeve (black)</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/white-sky-long-sleeve">sky / moon / ghost long sleeve (white)</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/637100">Sonic Forces</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/1237320">Sonic Frontiers</a></li>
+        <li class="tech"><b>TECH</b> | <a href="https://www.steamdeck.com/dock">Steam Deck Dock</a></li>
+        <li class="tech"><b>TECH</b> | <a href="https://www.steamdeck.com/oled">Steam Deck OLED</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/40800">Super Meat Boy</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/1089980">The Henry Stickmin Collection</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://theyetee.com/collections/celeste/products/through">Through</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://tobyfox.bandcamp.com/album/deltarune-chapter-1-ost">Toby Fox - DELTARUNE Chapter 1 OST</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://tobyfox.bandcamp.com/album/deltarune-chapter-2-ost">Toby Fox - DELTARUNE Chapter 2 OST</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://tobyfox.bandcamp.com/album/undertale-demo-ost">Toby Fox - UNDERTALE Demo OST</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://tobyfox.bandcamp.com/album/undertale-soundtrack">Toby Fox - UNDERTALE Soundtrack</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/508440">Totally Accurate Battle Simulator</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/1011670">Totally Reliable Delivery Service</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/bundle/11396">Towerfall Collection</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://mattmakesgames.itch.io/towerfall-8-player">Towerfall 8-Player</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://underscores.bandcamp.com/track/about-the-kid-that-never-left-the-house">underscores - about the kid that never left the house</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://underscores.plus/fear-LP">underscores 'fearmonger' vinyl</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://underscores.plus/fsh-LP">underscores 'fishmonger' vinyl</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://underscores.bandcamp.com/album/character-development">underscores - character development!</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://underscores.bandcamp.com/album/skin-purifying-treatment">underscores - skin purifying treatment</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://underscores.plus/Wsk-LP">underscores 'Wallsocket' vinyl</a> <i>(also on <a href="https://www.urbanoutfitters.com/shop/underscores-wallsocket-limited-2xlp">Urban Outfitters</a>)</i></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://underscores.bandcamp.com/album/we-never-got-strawberry-cake">underscores - we never got strawberry cake</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/837470">Untitled Goose Game</a></li>
+        <li class="games"><b>GAMES</b> | <a href="https://store.steampowered.com/app/306460">Unturned - Permanent Gold Upgrade</a></li>
+        <li class="tech"><b>TECH</b> | <a href="https://www.valvesoftware.com/index">Valve Index®</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://www.fangamer.com/collections/exok/products/celeste-pullover-hoodie">Vintage Mountain Pullover Hoodie</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://store.porterrobinson.com/products/arcane-tee">virtual self arcane circle tee</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://market.underscores.plus/products/wallsocket-tower-hoodie">Wallsocket Horseshoe Hoodie</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://market.underscores.plus/products/wallsocket-tower-shorts">Wallsocket Horseshoe Shorts</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://theyetee.com/collections/celeste/products/wavedashing">Wavedashing</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://webcage.bandcamp.com/track/mystery-song">webcage - mystery song</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://webcage.bandcamp.com/track/0m61ly5m-w-saoirse-dream-dossyx-nebita-can-of-bliss">webcage - OM61LY5M</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://webcage.bandcamp.com/track/onions-w-rift-dossyx-scooter-boi-to-oscar-can-of-bliss-saoirse-dream-franco">webcage - onions</a></li>
+        <li class="music"><b>MUSIC</b> | <a href="https://webcage.bandcamp.com/album/peer2peer">webcage - peer2peer</a></li>
+        <li class="clothes"><b>CLOTHES</b> | <a href="https://underscores.plus/welcome-to-mi">'Welcome to MI' tee</a></li>
     </ul>
     <p>in regards to how to gift things:</p>
     <ul>
@@ -136,7 +172,7 @@
     <p style="font-size:75%"><a href="https://jbmagination.com">i make stuff</a> | <a href="mailto:business@jbmagination.com">business inquiries</h2>
     <script>
       // @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt PublicDomain
-      Array.from(document.getElementsByTagName('a')).forEach((a) => {
+      for (var a of document.getElementsByTagName('a')) {
         a.addEventListener("click", (event) => {
           event.preventDefault();
           var hostname = new URL(event.currentTarget.href).hostname;
@@ -144,7 +180,14 @@
           if (sameHost) window.location = event.currentTarget.href;
           else if (confirm('You\'re about to head to ' + hostname + ', which follows a different privacy policy.')) window.location = event.currentTarget.href;
         });
-      });
+      };
+      
+      for (var checkbox of document.getElementsByTagName('input')) {
+        checkbox.addEventListener("change", (event) => {
+          if (!(event.target.checked)) for (let item of document.querySelectorAll(`.${event.target.name}`)) item.style.display = 'none';
+          else for (let item of document.querySelectorAll(`.${event.target.name}`)) item.style.display = '';
+        });
+      };
       // @license-end
     </script>
     <a href="./weblabels.html" rel="jslicense" data-jslicense="1"></a>
