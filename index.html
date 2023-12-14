@@ -15,22 +15,16 @@
       <p>
         <i>use these checkboxes to filter out what you don't want to see!</i><br>
         <input type="checkbox" id="musicFilter" name="music">
-        <label for="music"> MUSIC</label><br>
+        <label for="music" id="musicLabel"> MUSIC</label><br>
         <input type="checkbox" id="clothesFilter" name="clothes">
-        <label for="clothes"> CLOTHES</label><br>
+        <label for="clothes" id="clothesLabel"> CLOTHES</label><br>
         <input type="checkbox" id="gamesFilter" name="games">
-        <label for="games"> GAMES</label><br>
+        <label for="games" id="gamesLabel"> GAMES</label><br>
         <input type="checkbox" id="techFilter" name="tech">
-        <label for="tech"> TECH</label><br>
+        <label for="tech" id="techLabel"> TECH</label><br>
         <input type="checkbox" id="miscFilter" name="misc">
-        <label for="misc"> MISC</label><br>
+        <label for="misc" id="miscLabel"> MISC</label><br>
       </p>
-      <script>
-        // @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt PublicDomain
-        Array.from(document.getElementsByTagName('input')).forEach((checkbox) => checkbox.checked = true);
-        document.getElementById('filter').style = '';
-        // @license-end
-      </script>
     </div>
     <ul>
         <li class="music"><b>MUSIC</b> | <a href="https://store.100gecs.com/products/100-gecs-10-000-gecs-vinyl-black">100 gecs 10,000 gecs vinyl (black)</a></li>
@@ -174,6 +168,15 @@
     <p style="font-size:75%"><a href="https://jbmagination.com">i make stuff</a> | <a href="mailto:business@jbmagination.com">business inquiries</h2>
     <script>
       // @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt PublicDomain
+      for (let checkbox of document.getElementsByTagName('input')) checkbox.checked = true;
+      for (let label of document.getElementsByTagName('label')) {
+        var itemCount = Array.from(document.getElementsByClassName(label.id.replace('Label',''))).length
+        var itemOrItems = "items"
+        if (itemCount == 1) itemOrItems = "item"
+        label.textContent = label.textContent + ' (' +  itemCount + ' ' + itemOrItems + ')'
+      }
+      document.getElementById('filter').style = '';
+      
       for (var a of document.getElementsByTagName('a')) {
         a.addEventListener("click", (event) => {
           event.preventDefault();
